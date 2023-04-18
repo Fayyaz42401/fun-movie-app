@@ -1,0 +1,122 @@
+body{
+    background-color: var(--bg-color);
+}
+
+.about{
+    margin-top: 50px;
+    // padding: 20px;
+    // border: 2px solid aqua;
+    color: var(--color);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.about-title{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW92aWUlMjBwb3N0ZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+}
+.about-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.about-text{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    word-spacing: 8px;
+    line-height: 30px;
+}
+
+.about-img{
+    width: 40%;
+    
+    img{
+        border-radius: 4px;
+        height: 250px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-title{
+        height: 200px;
+    }
+    .contact-title{
+        height: 200px;
+    }
+    .about-text{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        word-spacing: 5px;
+        line-height: 22px;
+    }
+    
+    .about-img{
+        width: 40%;
+        
+        img{
+            border-radius: 4px;
+            height: 200px;
+            width: 300px;
+        }
+    }
+    
+}
+@media screen and (max-width: 685px) {
+    .about-text{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        word-spacing: 4px;
+        line-height: 22px;
+    }
+    
+    .about-img{
+        width: 40%;
+        
+        img{
+            border-radius: 4px;
+            height: 150px;
+            width: 250px;
+        }
+    }
+}
+@media screen and (max-width: 570px) {
+    .about-title{
+        height: 150px;
+    }
+    .contact-title{
+        height: 150px;
+    }
+ .about-div{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .about-text{
+    text-align: center;
+    width: 100%;
+ }
+
+ .about-img{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+    
+}

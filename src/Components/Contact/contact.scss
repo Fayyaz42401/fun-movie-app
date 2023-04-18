@@ -1,0 +1,162 @@
+.contact-page{
+    height: auto;
+    width: 100%;
+    color: var(--color);
+    margin: 20px 0 ;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-title{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+     linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=400");   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.contact-div{
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.contact-box{
+    // border: 2px solid red;
+    width: 400px;
+    height: auto;
+    margin: 10px ;
+
+    
+}
+
+.text-side{
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        border-bottom: 2px solid var(--main);
+        text-align: center;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.5rem;
+        margin: 20px 0;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover{
+            color: var(--main);
+        }
+
+    }
+
+}
+
+
+
+.contact-form {
+    // max-width: 500px;
+    // margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-name,
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    color: var(--color);
+
+    &:focus{
+        outline: none;
+    }
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: red;
+  }
+
+  
+@media only screen and (min-width: 768px) {
+    .contact-form {
+      max-width: 800px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .contact-form {
+      max-width: 1000px;
+    }
+  
+    .form-group {
+      display: flex;
+    }
+  
+    .form-group label {
+      flex-basis: 20%;
+      margin-right: 20px;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+      flex-basis: 80%;
+      margin-right: 20px;
+    }
+  
+    .form-group textarea {
+      flex-basis: 80%;
+      margin-right: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .contact-form {
+      max-width: 1200px;
+    }
+  }
